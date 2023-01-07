@@ -31,4 +31,7 @@ How data goes through network:
     label_loss.backward() # Calculate Gradients
     optimizer.step() # Update Weights
     
-    # we repeat the above steps to reduce the loss for 20 epochs
+    # we repeat the above steps to reduce the loss for 20 epochs. Following are the results:
+<img width="1268" alt="Screenshot 2023-01-07 at 7 32 42 PM" src="https://user-images.githubusercontent.com/31219508/211154680-92e92670-d8b3-4ab5-8a14-aeb9ff0bbcc5.png">
+
+    

@@ -3,6 +3,7 @@ Assignment for pytorch101
 Assignment description: Take the image and a random number as input and predicted the image label and its sum with the random number as output.
 
 I have taken 3 convolutional layers and 3 fully connected layers:
+
     # Convolutional layers to process the image
     self.conv1 = nn.Conv2d(1, 32, kernel_size=3) --> conv layer with 32 kernels each with size 3*3
     self.conv2 = nn.Conv2d(32, 64, kernel_size=3) --> conv layer with 64 kernels each with size 3*3

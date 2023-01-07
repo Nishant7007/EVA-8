@@ -2,7 +2,8 @@ Assignment for pytorch101
 
 Assignment description: Take the image and a random number as input and predicted the image label and its sum with the random number as output.
 
-I have taken 3 convolutional layers and 3 fully connected layers:
+layers Description: I have taken 3 convolutional layers and 3 fully connected layers:
+    
     # Convolutional layers to process the image
     self.conv1 = nn.Conv2d(1, 32, kernel_size=3) --> conv layer with 32 kernels each with size 3*3
     self.conv2 = nn.Conv2d(32, 64, kernel_size=3) --> conv layer with 64 kernels each with size 3*3
@@ -13,6 +14,8 @@ I have taken 3 convolutional layers and 3 fully connected layers:
     self.fc2 = nn.Linear(in_features=120, out_features=60) --> convert 120 features to 60 features
     self.out = nn.Linear(in_features=60, out_features=10) --> convert 60 features to 10 features (as we have 10 classes)
     
+How data goes through network:
+
     # after passing the batch through this network:
     we get the output as batch_size*10 (where 10 represents the number of classes -- "0 to 9")
     we then combine this output tensor batch_size*10 with the random number tensor to get a tensor batch_size*19 which represents the sum of the predicted label with the random number

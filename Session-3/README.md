@@ -1,4 +1,7 @@
 # EVA-8 Assignment3 (Creating a simple neural network in Excel sheet
+
+## PART-1
+
 In this assignment, we are asked to create a simple neural network using the backpropagation rule in an excel sheet. The network for which, we need to build the formula is shown below:
 ![Getting Started](model.png)
 
@@ -41,3 +44,10 @@ We tried different values of learning rate (η)
 
 
 From, above image we can see the loss converges faster when we increase the learning rate. 
+
+
+## PART-2 
+
+In this part, we are asked to achieve 99.4% validation accuracy in 20k and ess than 20 Epochs. We are allowed to do things like batch normalization, dropouts, Global average pooling. 
+
+My network has 16,196 parameters. I am using dropout in each colvolution layer with rate of 0.05 and batch normalization in each layer except the last layer. I achieved validation accuracy of 99.48%. PART-2.ipynb contains the code and I am also attached a pdf version of the code file. 
